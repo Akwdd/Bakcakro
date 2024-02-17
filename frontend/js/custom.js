@@ -185,10 +185,10 @@
         /* ------------------------ Bootstrap Parent Modal  --------------------- */
         /* ---------------------------------------------------------------------- */
         TM_loadBSParentModal: function() {
-            var ajaxLoadContent = true;
+            var ajaxLoadContent = false;
             if (ajaxLoadContent) {
                 $.ajax({
-                    url: "ajax-load/bootstrap-parent-modal.html",
+                    
                     success: function(data) {
                         $('body').append(data);
                     },
@@ -200,11 +200,11 @@
         /* ------------------------------ Demo Switcher  ------------------------ */
         /* ---------------------------------------------------------------------- */
         TM_demoSwitcher: function() {
-            var showSwitcher = true;
+            var showSwitcher = false;
             var $style_switcher = $('#style-switcher');
             if (!$style_switcher.length && showSwitcher) {
                 $.ajax({
-                    url: "color-switcher/style-switcher.html",
+                    
                     success: function(data) {
                         $('body').append(data);
                     },
@@ -713,7 +713,7 @@
         },
 
 
-        /* ---------------------------------------------------------------------------- */
+        /* -----------------------------------------------------------------relative----------- */
         /* --------------------------- One Page Nav close on click -------------------- */
         /* ---------------------------------------------------------------------------- */
         TM_menuCollapseOnClick: function() {
@@ -1863,7 +1863,7 @@
     };
 
 
-    /* ---------------------------------------------------------------------- */
+    /* ------------------------------relative---------------------------------------- */
     /* ---------------------------- Call Functions -------------------------- */
     /* ---------------------------------------------------------------------- */
     $document.ready(
