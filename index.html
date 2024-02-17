@@ -39,7 +39,28 @@
     <link href="./frontend/css/colors/theme-skin-color-set-1.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
    
+    <style media="screen">
+        .hr {
+            border: 1px solid #002147;
+        }
+    </style>
+    <style>
+        #demo {
+            text-align: center;
+            font-size: 25px;
+            color: Green;
+            margin-top: 0px;
+        }
+    </style>
+    <!-- CSS | Inclue style -->
+    <!-- Revolution Slider 5.x CSS settings -->
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" />
+    <style>
+    </style>
+	
+	
 	
 <link rel="stylesheet" id="elementor-post-7-css" href="post-7.css" media="all">
 
@@ -456,7 +477,7 @@
 
             </div>
         </header>
-        <!-- Start relative main-content -->
+        <!-- Start main-content -->
         <div  class="main-content">
 
 
@@ -481,7 +502,16 @@
                     display: inline-block;
                 }
 
-              
+                *,
+                *:before,
+                *:after {
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+                }
+
                 .Grid1k {
                     padding: 0 15px;
                     max-width: 1200px;
@@ -2068,12 +2098,35 @@
     <script src="./frontend/js/jquery-plugin-collection.js "></script>
     <!-- JS | Custom script for all pages -->
     <script src="./frontend/js/custom.js "></script>
+    <script src="./frontend/js/extra.js "></script>
 
     <!-- JS | Include js -->
-    
+    <script>
+        $(document).ready(function() {
+            $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+                e.preventDefault();
+                $(this).siblings('a.active').removeClass("active");
+                $(this).addClass("active");
+                var index = $(this).index();
+                $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+                $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+            });
+        });
+    </script>
     <script src="./frontend/js/slick.js"></script>
     <!-- JS | Include js -->
-    
+    <script>
+        $(document).ready(function() {
+            $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+                e.preventDefault();
+                $(this).siblings('a.active').removeClass("active");
+                $(this).addClass("active");
+                var index = $(this).index();
+                $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+                $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+            });
+        });
+    </script>
     <script>
         $(document).ready(function() {
 
@@ -2094,4 +2147,19 @@
             });
 
         })
-    </script></body></html>
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#image').change(function(e) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#showImage').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(e.target.files['0']);
+            })
+        })
+    </script>
+
+</body>
+
+</html>
