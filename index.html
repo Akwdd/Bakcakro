@@ -32,8 +32,6 @@
     <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
     <link href="./frontend/css/style.css" rel="stylesheet" type="text/css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-
     <!-- CSS | Gallery -->
     <script type="text/javascript" src="./frontend/js/slider.js"></script>
 
@@ -2070,35 +2068,12 @@
     <script src="./frontend/js/jquery-plugin-collection.js "></script>
     <!-- JS | Custom script for all pages -->
     <script src="./frontend/js/custom.js "></script>
-    <script src="./frontend/js/extra.js "></script>
 
     <!-- JS | Include js -->
-    <script>
-        $(document).ready(function() {
-            $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
-                e.preventDefault();
-                $(this).siblings('a.active').removeClass("active");
-                $(this).addClass("active");
-                var index = $(this).index();
-                $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
-                $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
-            });
-        });
-    </script>
+    
     <script src="./frontend/js/slick.js"></script>
     <!-- JS | Include js -->
-    <script>
-        $(document).ready(function() {
-            $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
-                e.preventDefault();
-                $(this).siblings('a.active').removeClass("active");
-                $(this).addClass("active");
-                var index = $(this).index();
-                $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
-                $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
-            });
-        });
-    </script>
+    
     <script>
         $(document).ready(function() {
 
