@@ -2097,13 +2097,35 @@
     <!-- JS | jquery plugin collection for this theme -->
     <script src="./frontend/js/jquery-plugin-collection.js "></script>
     <!-- JS | Custom script for all pages -->
-    <script src="./frontend/js/extra.js "></script>
+   <script src="./frontend/js/extra.js "></script>
 
     <!-- JS | Include js -->
-   
+    <script>
+        $(document).ready(function() {
+            $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+                e.preventDefault();
+                $(this).siblings('a.active').removeClass("active");
+                $(this).addClass("active");
+                var index = $(this).index();
+                $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+                $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+            });
+        });
+    </script>
     <script src="./frontend/js/slick.js"></script>
     <!-- JS | Include js -->
- 
+    <script>
+        $(document).ready(function() {
+            $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+                e.preventDefault();
+                $(this).siblings('a.active').removeClass("active");
+                $(this).addClass("active");
+                var index = $(this).index();
+                $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+                $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+            });
+        });
+    </script>
     <script>
         $(document).ready(function() {
 
@@ -2125,5 +2147,14 @@
 
         })
     </script>
-   
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#image').change(function(e) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#showImage').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(e.target.files['0']);
+            })
+        })
     </script></body></html>
