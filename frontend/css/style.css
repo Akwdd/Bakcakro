@@ -311,6 +311,7 @@
 
 .menuzord .menuzord-menu>li>a {
     border-right: 1px solid #0C8EDA;
+	margin-left:-5px;
 }
 
 .menuzord .menuzord-menu>.transp>a {
