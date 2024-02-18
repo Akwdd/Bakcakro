@@ -4,12 +4,13 @@
 .art-mobile-top-bar {
   z-index: 99;
   width: 100%;
-  height: 150px;
+  height: 250px;
   background: #20202a;
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.6);
           box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.6);
-  padding: 10px 24px 0px;
-  display: none;
+  padding: 20px;
+  display: fixed;
+  padding:0px 0px 0px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -26,7 +27,8 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-	  color:white
+	  color:white;
+	  height:150px
   }
   .header-middle{
 	  display:none
