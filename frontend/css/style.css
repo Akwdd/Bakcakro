@@ -333,8 +333,8 @@
     box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     padding: 30px;
     margin-bottom: 30px;
-    margin-left: -18px;
-    margin-right: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .logo-radius {
@@ -770,6 +770,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     .cust-m-ml {
         margin-left: 15px !important;
         overflow: hidden;
+		margin-bottom: 10px;
     }
     .cust-m-pb {
         margin-top: 0 !important;
@@ -789,7 +790,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
         padding: 5px !important;
     }
     .event-m-m {
-        padding-right: 15px !important;
+        padding-right: 0px !important;
     }
     .event-m-mar {
         margin-bottom: 0 !important;
