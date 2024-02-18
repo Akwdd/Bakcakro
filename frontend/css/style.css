@@ -1,6 +1,42 @@
 .bg-lightest {
     background-color: #5b0c0c !important;
 }
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  margin-top: 20px;
+  background-color: rgba(6, 58, 71, 0.89);
+  animation: status 7s ease forwards;
+  color:yellow;
+  border-radius: 20px;
+}
+#status.error {
+  margin-top: 20px;
+  background-color: rgba(6, 58, 71, 0.89);
+  color:yellow;
+  animation: status 7s ease forwards;
+  border-radius: 20px;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 .art-mobile-top-bar {
   z-index: 99;
   width: 100%;
