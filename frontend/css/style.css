@@ -275,6 +275,7 @@
     overflow: hidden;
     position: relative;
     z-index: 999;
+	    background-color: #ff9f43;
 }
 .art-btn.art-btn-md {
     height: 45px;
@@ -298,20 +299,23 @@
   padding: 10px;
   margin: 0 auto;
   border-radius: 8px;
+  
 }
 #status.success {
   margin-top: 20px;
-  background-color: rgba(6, 58, 71, 0.89);
+  
   animation: status 7s ease forwards;
-  color:yellow;
+  color:blue;
   border-radius: 20px;
+  background-color:#ff9f43;
 }
 #status.error {
   margin-top: 20px;
-  background-color: rgba(6, 58, 71, 0.89);
-  color:yellow;
+  
+  color:blue;
   animation: status 7s ease forwards;
   border-radius: 20px;
+  background-color:#ff9f43;
 }
 @keyframes status {
   0% {
